@@ -1,166 +1,235 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-     <meta name="viewport"
-       content="width=device-width,
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width,
                 initial-scale=1.0">
-    <title>Portal da Qualidade</title>
-    <link rel="stylesheet" type="text/css" href="estilos.css">
-</head>
-<body>
-    <div>
-        <nav id="header">
-            <figure class="header">
-                <img alt="Logo" src="images/logo_qualidade.svg" width="600px" height="600px">
-            </figure>
-        
-            <ul class="menu">
-               <h1 >política da qualidade</h1> <br>
-               <hr width="40%"><br>
-                <h1 >manual da qualidade</h1><br>
-                <hr width="40%"><br>
-             <h1 >SIGQ_UAb</h1>  <br>
-             <hr width="40%"><br>
-               <h1 >avaliação externa</h1>
-            </ul>
-        </nav>                              
-                <div class="parent">
-                    <img class="image1" src="images/fundo_azul.jpg" />
-                    <img class="image2" src="images/mao.png" width="600" height="600">
-                 <div class="texto">
+        <title>Portal da Qualidade</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+
+        <style>
+            .uab-container{
+                max-width: 1500px;
+                width: 100%;
+                margin: 0 auto;
+            }
+            .uab-display-flex{
+                display: flex;
+            }
+            .uab-as-rows{
+                flex-direction: column;
+                width: 100%;
+            }
+            .uab-as-columns{
+                flex-direction: row;
+                width: 100%;
+            }
+            .uab-justify-center{
+                justify-content: center;
+            }
+            .uab-as-two-columns > *{
+                width: 50%;
+            }
+            ul.uab-menu{
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: stretch;
+                max-width: fit-content;
+            }
+            ul.uab-menu li{
+                border-bottom: 2px solid #868686;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 2rem;
+                text-align: center;
+                padding-bottom: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .img-responsive{
+                width: 100%;
+                height: auto;
+            }
+            .section-qualidade{
+                padding: 120px;
+                background-color: #F5F3F4;
+                width: 50vw;
+                margin-left: calc(-1 * ( 100vw/2 - 50%));
+                display: flex;
+                flex-direction: row;
+                justify-content: right;
+            }
+
+            @media screen and (min-width: 500px){
+                .uab-as-columns-desktop{
+                    flex-direction: row;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <div class="section-one uab-display-flex uab-justify-center uab-container">
+                <nav id="header" class="uab-display-flex uab-as-rows uab-as-columns-desktop uab-as-two-columns">
+                    <div class="section-qualidade">
+                        <img alt="Qualidade" src="images/logo_qualidade.svg" class="img-responsive" style="max-width: 500px;">
+                    </div>
+
+                    <div class="uab-display-flex uab-justify-center">
+                        <ul class="menu uab-menu">
+                            <li>política da qualidade</li>
+                            <li>manual da qualidade</li>
+                            <li>SIGQ_UAb</li>
+                            <li>avaliação externa</li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="parent">
+                <img class="image1" src="images/fundo_azul.jpg" />
+                <img class="image2" src="images/mao.png" width="600" height="600">
+                <div class="texto">
                     <br><br>
                     <h1>Politica da Qualidade</h1>
                     <br><br>
                     <hr width="92%"><br><br>
                     <h1>Objetivo</h1><br><br>
-                <p>A politica para a qualidade tem como principal objetivo a melhoria 
-                    contínua através do estímulo à participação e à responsabilidade.</p>
-                <p>A concretização desse objetivo implica:</p>
-                   <ul>
-                    <p>i) o desenvolvimento de uma cultura organizacional,envolvendo e
-                         motivando toda a comunidade académica nos processos relativos 
-                         à qualidade;</p>
-                    <p>ii) a promoção de uma cultura de qualidade transversal a todas as 
-                        atividades e projetos, na qual a avaliação seja encarada como um 
-                        elemento natural da atividade da instituição.</p>
-                   </ul> 
+                    <p>A politica para a qualidade tem como principal objetivo a melhoria
+                        contínua através do estímulo à participação e à responsabilidade.</p>
+                    <p>A concretização desse objetivo implica:</p>
+                    <ul>
+                        <p>i) o desenvolvimento de uma cultura organizacional,envolvendo e
+                            motivando toda a comunidade académica nos processos relativos
+                            à qualidade;</p>
+                        <p>ii) a promoção de uma cultura de qualidade transversal a todas as
+                            atividades e projetos, na qual a avaliação seja encarada como um
+                            elemento natural da atividade da instituição.</p>
+                    </ul>
                 </div>
-                </div>
-       
-    </div>
-    <br><br><br><br>
-    <h1>Compromisso</h1>
-    <br><br>
-    <div class="PoliticadaQualidade">
-        <div>
-            <h1>1</h1>
-            <p>Promover uma cultura de qualidade institucional e de 
-                autoresponsabilização, com base na autoavaliação 
-                regular e no consequente controlo de implementação de melhoria.</p>
-        </div>
-        <div>
-            <h1>2</h1>
-            <p>Fomentar uma participação ativadas partes interessadas, 
-                internas e externas, relevantes para o funcionamento da 
-                instituição, auscultando as suas necessidades e 
-                expectativas, procurando aumentar a sua satisfação.</p>
-        </div>
-        <div><h1>3</h1>
-        <p> Promover os valores da UAb em todas as atividades 
-            desenvolvidas no âmbito do SIGQ_UAb.</p>
-        </div>
-        <div>
-            <h1>4</h1>
-<p>Assegurar a identificação de constrangimentos 
-    e oportunidades, considerá-las e controlá-las, aumentando a 
-    eficácia do SIGQ e a obtenção de melhores resultados.</p>
-        </div>
-        <div>
-            <h1>5</h1>
-            <p> Garantir as condições necessárias à atualização do SIGQ 
-                e a sua certificação pelos referenciais e normas
-                 estabelecidas como referência para a sua construção.</p>
-        </div>
-        <div>
-            <h1>6</h1>
-            <p> Assegurar, através da Política de Segurança da 
-                Informação, o comprometimento da organização no 
-                cumprimento dos requisitos da norma ISO/IEC 27001.</p>
-        </div>
-          
-    </div>
-    <hr width="100%" color="orange"><br><br><br>
-    <h1>SIGQ_Uab</h1>
-    <br><br>
-    <hr width="15%"><br>
-<div class="texto2">
-    <p>A Universidade Aberta está focada na
-        promoção da inovação, na
-        sustentabilidade da sua missão e projeto
-        de ensino a distância e eLearning. Neste
-        enquadramento, o Sistema Internoda
-        Garantiada Qualidade (SIGQ) é uma
-        prioridade e uma preocupação constante.
-    </p><br>
-    <p>A O SIGQ é internamente entendido como
-        parte integrante da instituição
-        encontrando-se totalmente alinhado com
-        o Plano Estratégico da Universidade.
-    </p><br>
-    <p>A AUAb identificou os processos
-        necessários à concretização do
-        SIGQ_UAb aos quais se encontram
-        associadosos Referenciais de forma a
-        garantir uma orientação pelo princípio da
-        melhoria contínua, cf.modelo seguinte:</p>
-        
-    </div>
-<img class="image3" src="images/workflow.svg" width="1000" height="1000">
-    </div>
+            </div>
 
-    <h1>Avaliação externa</h1>
-    <br><br>
-    <hr width="17%"><br>
-    <div class="avaliacaoexterna">
-        <div>
-          <h1>Avaliação Institucional</h1><br>
-            <p>A Universidade Aberta submeteu-se em <br>
-                2017 à Avaliação Institucional pela <br>
-                Agência de Avaliação e Acreditação do<br>
-                 Ensino Superior(A3ES)</p><br>
-            <a href="">RELATÓRIO DE AUTOAVALIAÇÃO INSTITUCIONAL</a><br>
-            <a href="">RELATÓRIO FINAL DA CAE </a><br>
         </div>
-        <div>
-            <h1>Auditoria ao Sistema Interno <br>
-                de Garantia da Qualidade <br>
-                 [ASIGQ]</h1><br>
-            <a href="">RELATÓRIO DE AUTOAVALIAÇÃO DO SIGQ </a><br>
-            <a href="">RELATÓRIO DE ATIVIDADES DO SIGQ UAb 2018 </a><br>
-            <a href="">RELATÓRIO DE AVALIAÇÃO DO SIGQ_UAb 2020</a><br>
-            <a href="">DECISÃO ASIGQ </a>
+        <br><br><br><br>
+        <h1>Compromisso</h1>
+        <br><br>
+        <div class="PoliticadaQualidade">
+            <div>
+                <h1>1</h1>
+                <p>Promover uma cultura de qualidade institucional e de
+                    autoresponsabilização, com base na autoavaliação
+                    regular e no consequente controlo de implementação de melhoria.</p>
+            </div>
+            <div>
+                <h1>2</h1>
+                <p>Fomentar uma participação ativadas partes interessadas,
+                    internas e externas, relevantes para o funcionamento da
+                    instituição, auscultando as suas necessidades e
+                    expectativas, procurando aumentar a sua satisfação.</p>
+            </div>
+            <div>
+                <h1>3</h1>
+                <p> Promover os valores da UAb em todas as atividades
+                    desenvolvidas no âmbito do SIGQ_UAb.</p>
+            </div>
+            <div>
+                <h1>4</h1>
+                <p>Assegurar a identificação de constrangimentos
+                    e oportunidades, considerá-las e controlá-las, aumentando a
+                    eficácia do SIGQ e a obtenção de melhores resultados.</p>
+            </div>
+            <div>
+                <h1>5</h1>
+                <p> Garantir as condições necessárias à atualização do SIGQ
+                    e a sua certificação pelos referenciais e normas
+                    estabelecidas como referência para a sua construção.</p>
+            </div>
+            <div>
+                <h1>6</h1>
+                <p> Assegurar, através da Política de Segurança da
+                    Informação, o comprometimento da organização no
+                    cumprimento dos requisitos da norma ISO/IEC 27001.</p>
+            </div>
+
+        </div>
+        <hr width="100%" color="orange"><br><br><br>
+        <h1>SIGQ_Uab</h1>
+        <br><br>
+        <hr width="15%"><br>
+        <div class="texto2">
+            <p>A Universidade Aberta está focada na
+                promoção da inovação, na
+                sustentabilidade da sua missão e projeto
+                de ensino a distância e eLearning. Neste
+                enquadramento, o Sistema Internoda
+                Garantiada Qualidade (SIGQ) é uma
+                prioridade e uma preocupação constante.
+            </p><br>
+            <p>A O SIGQ é internamente entendido como
+                parte integrante da instituição
+                encontrando-se totalmente alinhado com
+                o Plano Estratégico da Universidade.
+            </p><br>
+            <p>A AUAb identificou os processos
+                necessários à concretização do
+                SIGQ_UAb aos quais se encontram
+                associadosos Referenciais de forma a
+                garantir uma orientação pelo princípio da
+                melhoria contínua, cf.modelo seguinte:</p>
+
+        </div>
+        <img class="image3" src="images/workflow.svg" width="1000" height="1000">
         </div>
 
-        <div>
-            <h1>Acreditação de ciclos de estudo</h1><br>
-            <p>A acreditação de ciclos de estudos, nos <br>
-                termos do n.º1 do artigo 52.º do Decreto-Lei <br>
-                n.º65/2018, de 16 de agosto, consiste na <br>
-                verificação do preenchimento dos requisitos <br>
-                legais para a sua criação e funcionamento. <br>
-                Os resultados dos processos de <br>
-                acreditação dos ciclos de estudo sem funcionamento <br>
-                na UAb podem ser consultados no site da A3ES <br>
-                e estão disponíveis no Guia de Cursos do <br>
-                portal UAb, na informação específica de <br>
-                cada ciclo de estudos.</p>
+        <h1>Avaliação externa</h1>
+        <br><br>
+        <hr width="17%"><br>
+        <div class="avaliacaoexterna">
+            <div>
+                <h1>Avaliação Institucional</h1><br>
+                <p>A Universidade Aberta submeteu-se em <br>
+                    2017 à Avaliação Institucional pela <br>
+                    Agência de Avaliação e Acreditação do<br>
+                    Ensino Superior(A3ES)</p><br>
+                <a href="">RELATÓRIO DE AUTOAVALIAÇÃO INSTITUCIONAL</a><br>
+                <a href="">RELATÓRIO FINAL DA CAE </a><br>
+            </div>
+            <div>
+                <h1>Auditoria ao Sistema Interno <br>
+                    de Garantia da Qualidade <br>
+                    [ASIGQ]</h1><br>
+                <a href="">RELATÓRIO DE AUTOAVALIAÇÃO DO SIGQ </a><br>
+                <a href="">RELATÓRIO DE ATIVIDADES DO SIGQ UAb 2018 </a><br>
+                <a href="">RELATÓRIO DE AVALIAÇÃO DO SIGQ_UAb 2020</a><br>
+                <a href="">DECISÃO ASIGQ </a>
+            </div>
+
+            <div>
+                <h1>Acreditação de ciclos de estudo</h1><br>
+                <p>A acreditação de ciclos de estudos, nos <br>
+                    termos do n.º1 do artigo 52.º do Decreto-Lei <br>
+                    n.º65/2018, de 16 de agosto, consiste na <br>
+                    verificação do preenchimento dos requisitos <br>
+                    legais para a sua criação e funcionamento. <br>
+                    Os resultados dos processos de <br>
+                    acreditação dos ciclos de estudo sem funcionamento <br>
+                    na UAb podem ser consultados no site da A3ES <br>
+                    e estão disponíveis no Guia de Cursos do <br>
+                    portal UAb, na informação específica de <br>
+                    cada ciclo de estudos.</p>
+            </div>
         </div>
-    </div>
 
 
-        
+
         <br><br><br><br><br>
-    <time datetime="2023-01-23T13:49 :39+00:00" class="meta modified-date d-block small text-end text-secondary py-3">Última atualização: 25 de janeiro, 2023</time>
-        
+        <time datetime="2023-01-23T13:49 :39+00:00" class="meta modified-date d-block small text-end text-secondary py-3">Última atualização: 25 de janeiro, 2023</time>
+
     </body>
+</html>
